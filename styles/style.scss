@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// typography----------------------------
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 4.8rem;
+    color: white;
+}
+
+h3,
+h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+// layout---------------------------------------
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    .menu {
+        display: none;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 2em;
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        li {
+            margin: 0 1.2em;
+            cursor: pointer;
+        }
+        .btn {
+            color: black;
+            background-color: white;
+            padding: .8em 2em;
+            border-radius: 3em;
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            &:hover {
+                background-color: rgba($color: white, $alpha: .4);
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+main {
+    .hero {
+        height: 100vh;
+        background-image: url(../images/desktop/image-header.jpg);
+        background-position: center;
+        background-size: cover;
+        h1 {
+            text-align: center;
+            margin: 1.2em 0;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+        .arrow {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        aspect-ratio: 3/1.25;
+    }
+    .second {
+        .left {
+            padding: 7em 4em 5em 8em;
+            h2 {
+                width: 80%;
+                margin-bottom: 1em;
+                color: hsl(212, 27%, 19%);
+            }
+            p {
+                color: hsl(232, 10%, 55%);
+                line-height: 1.5;
+                margin-bottom: 2em;
+            }
+            a {
+                font-family: 'fraunces', serif;
+                font-weight: 900;
+                font-size: .85em;
+                text-transform: uppercase;
+                color: hsl(212, 27%, 19%);
+                text-decoration: none;
+                border-bottom: 5px solid hsl(51, 100%, 49%);
+            }
+        }
+        .right {
+            background-image: url(../images/desktop/image-transform.jpg);
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+    .third {
+        .left {
+            background-image: url(../images/desktop/image-stand-out.jpg);
+            background-position: center center;
+            background-size: cover;
+        }
+        .right {
+            padding: 7em 8em 5em 4em;
+            h2 {
+                width: 80%;
+                margin-bottom: 1em;
+                color: hsl(212, 27%, 19%);
+            }
+            p {
+                color: hsl(232, 10%, 55%);
+                line-height: 1.5;
+                margin-bottom: 2em;
+            }
+            a {
+                font-family: 'fraunces', serif;
+                font-weight: 900;
+                font-size: .85em;
+                text-transform: uppercase;
+                color: hsl(212, 27%, 19%);
+                text-decoration: none;
+                border-bottom: 5px solid hsl(7, 99%, 70%);
+            }
+        }
+    }
+    .forth {
+        .left,
+        .right {
+            background-position: center center;
+            background-size: cover;
+            text-align: center;
+            padding: 55% 10% 20px;
+            h3 {
+                margin-bottom: 1em;
+            }
+            p {
+                width: 70%;
+                margin: 0 auto;
+                line-height: 1.5;
+            }
+        }
+        .left {
+            background-image: url(../images/desktop/image-graphic-design.jpg);
+            color: hsl(167, 40%, 24%);
+        }
+        .right {
+            background-image: url(../images/desktop/image-photography.jpg);
+            color: hsl(198, 62%, 26%);
+        }
+    }
+    .testimonials {
+        padding: 8em;
+        text-align: center;
+        h4 {
+            color: hsl(210, 4%, 67%);
+            margin-bottom: 3em;
+        }
+        .clients {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 2rem;
+        }
+        .card {
+            img {
+                width: 30%;
+                border-radius: 50%;
+                margin-bottom: 3rem;
+            }
+            p {
+                color: hsl(232, 10%, 55%);
+                line-height: 1.5;
+            }
+            .name {
+                font-family: 'fraunces', serif;
+                color: hsl(212, 27%, 19%);
+                margin: 3em 0 .5em;
+            }
+            .designation {
+                color: hsl(210, 4%, 67%);
+                font-size: .85em;
+            }
+        }
+    }
+    .gallery {
+        min-height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .picture-1,
+        .picture-2,
+        .picture-3,
+        .picture-4 {
+            background-size: cover;
+            background-position: center center;
+        }
+        .picture-1 {
+            background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+        }
+        .picture-2 {
+            background-image: url(../images/desktop/image-gallery-orange.jpg);
+        }
+        .picture-3 {
+            background-image: url(../images/desktop/image-gallery-cone.jpg);
+        }
+        .picture-4 {
+            background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+        }
+    }
+}
+
+footer {
+    background-color: hsl(168, 50%, 70%);
+    text-align: center;
+    padding: 4rem;
+    color: hsl(168, 34%, 41%);
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 3rem auto;
+    }
+    li {
+        margin: 0 1em;
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+    .social {
+        margin-top: 6rem;
+    }
+}
+
+@media (max-width:900px) {
+    body {
+        font-size: 1.6rem;
+    }
+    h1 {
+        font-size: 3.6rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.6rem;
+    }
+    header {
+        .menu {
+            display: block;
+        }
+        nav {
+            display: none;
+        }
+    }
+    main {
+        .hero {
+            h1 {
+                margin: 2em 0;
+            }
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            aspect-ratio: 1/1.75;
+        }
+        .second {
+            .left {
+                text-align: center;
+                padding: 5em;
+                h2 {
+                    width: 100%;
+                }
+            }
+            .right {
+                grid-row: 1/2;
+            }
+        }
+        .third {
+            .right {
+                text-align: center;
+                padding: 5em;
+                h2 {
+                    width: 100%;
+                }
+            }
+        }
+        .testimonials {
+            padding: 5em;
+            text-align: center;
+            .clients {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                row-gap: 8rem;
+            }
+            .card {
+                .name {
+                    margin: 1em 0 .5em;
+                }
+            }
+        }
+        .gallery {
+            min-height: 60vh;
+            aspect-ratio: 1/1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            .picture-1,
+            .picture-2,
+            .picture-3,
+            .picture-4 {
+                background-size: cover;
+                background-position: center center;
+            }
+            .picture-1 {
+                background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+            }
+            .picture-2 {
+                background-image: url(../images/desktop/image-gallery-orange.jpg);
+            }
+            .picture-3 {
+                background-image: url(../images/desktop/image-gallery-cone.jpg);
+            }
+            .picture-4 {
+                background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+            }
+        }
+    }
+}
