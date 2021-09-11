@@ -392,7 +392,8 @@ footer .social {
     margin: 1em 0 .5em;
   }
   main .gallery {
-    min-height: 60vh;
+    width: 100%;
+    height: auto;
     aspect-ratio: 1/1;
     display: -ms-grid;
     display: grid;
