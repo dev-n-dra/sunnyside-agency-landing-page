@@ -14,7 +14,7 @@ Users should be able to:
 ### Screenshot
 
 ![Screenshot of my Solution](./images/Screenshot 1.png)
-![Screenshot of my Solution](./images/Screenshot 2.png)
+<!-- ![Screenshot of my Solution](./images/Screenshot 2.png) -->
 
 ### Links
 
