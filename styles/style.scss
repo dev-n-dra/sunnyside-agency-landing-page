@@ -304,7 +304,7 @@ footer {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
-            aspect-ratio: 1/1.75;
+            aspect-ratio: 1/2;
         }
         .second {
             .left {
@@ -343,31 +343,12 @@ footer {
             }
         }
         .gallery {
+            min-height: auto;
             width: 100%;
-            height: auto;
             aspect-ratio: 1/1;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            .picture-1,
-            .picture-2,
-            .picture-3,
-            .picture-4 {
-                background-size: cover;
-                background-position: center center;
-            }
-            .picture-1 {
-                background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
-            }
-            .picture-2 {
-                background-image: url(../images/desktop/image-gallery-orange.jpg);
-            }
-            .picture-3 {
-                background-image: url(../images/desktop/image-gallery-cone.jpg);
-            }
-            .picture-4 {
-                background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
-            }
         }
     }
 }

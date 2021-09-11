@@ -354,7 +354,7 @@ footer .social {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-    aspect-ratio: 1/1.75;
+    aspect-ratio: 1/2;
   }
   main .second .left {
     text-align: center;
@@ -392,8 +392,8 @@ footer .social {
     margin: 1em 0 .5em;
   }
   main .gallery {
+    min-height: auto;
     width: 100%;
-    height: auto;
     aspect-ratio: 1/1;
     display: -ms-grid;
     display: grid;
@@ -401,25 +401,6 @@ footer .social {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-  }
-  main .gallery .picture-1,
-  main .gallery .picture-2,
-  main .gallery .picture-3,
-  main .gallery .picture-4 {
-    background-size: cover;
-    background-position: center center;
-  }
-  main .gallery .picture-1 {
-    background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
-  }
-  main .gallery .picture-2 {
-    background-image: url(../images/desktop/image-gallery-orange.jpg);
-  }
-  main .gallery .picture-3 {
-    background-image: url(../images/desktop/image-gallery-cone.jpg);
-  }
-  main .gallery .picture-4 {
-    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
   }
 }
 /*# sourceMappingURL=style.css.map */
